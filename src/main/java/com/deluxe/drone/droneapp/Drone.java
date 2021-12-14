@@ -11,7 +11,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name="agent")
+@Table(name="drones")
 @Setter
 @Getter
 @ToString
@@ -46,22 +46,16 @@ public class Drone {
     public Drone(){
 
     }
-
-    public Agent(long id, String name, String agentCode){
-        this.id = id;
-        this.name = name;
-        this.agentCode = agentCode;
-    }
-
-    @PrePersist
-    protected void onCreate() {
-        createdAt = new Date();
-    }
-
-    @PreUpdate
-    protected void onUpdate() {
-        updatedAt = new Date();
-    }
+//
+//    @PrePersist
+//    protected void onCreate() {
+//        createdAt = new Date();
+//    }
+//
+//    @PreUpdate
+//    protected void onUpdate() {
+//        updatedAt = new Date();
+//    }
 
 
 
